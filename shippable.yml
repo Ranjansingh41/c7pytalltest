@@ -1,0 +1,15 @@
+jobs:
+ - name: c7pytall
+   type: runSh
+   steps:
+     - TASK:
+         runtime:
+           options:
+             imageName: "drydock/c7pytallall"
+             imageTag: master
+         script:
+           - python --version
+           - python3.6 --version
+           - pip --version
+           - virtualenv --version
+         
